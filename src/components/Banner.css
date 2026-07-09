@@ -1,7 +1,7 @@
-/* hero-band-dark : polarity-flipped near-black hero */
+/* hero-band : 파스텔 주황 배경 + ink 텍스트 (가독성 확보) */
 .banner {
-  background: var(--ink);
-  color: var(--on-primary);
+  background: var(--pastel-orange);
+  color: var(--ink);
   padding: 72px var(--sp-3xl);
 }
 
@@ -11,7 +11,7 @@
 }
 
 .banner__eyebrow {
-  color: var(--mute-soft);
+  color: var(--body-mid);
   margin-bottom: var(--sp-lg);
 }
 
@@ -29,7 +29,7 @@
   font-weight: 400;
   line-height: 32px;
   letter-spacing: -0.16px;
-  color: var(--mute-soft);
+  color: var(--body);
 }
 
 @media (max-width: 767px) {

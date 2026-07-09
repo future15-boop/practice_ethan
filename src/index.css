@@ -5,6 +5,7 @@
   /* Surface */
   --canvas: #ffffff;
   --hairline: #d8d8d8;
+  --pastel-orange: #ffe0b2; /* 파스텔톤 주황색 배경 */
 
   /* Ink / text ramp */
   --ink: #080808;
@@ -50,7 +51,7 @@
 
 html, body {
   font-family: var(--font);
-  background: var(--canvas);
+  background: var(--pastel-orange);
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
