@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import TopNav from './components/TopNav.jsx'
+import HeroCarousel from './components/HeroCarousel.jsx'
 import Banner from './components/Banner.jsx'
 import BoardList from './components/BoardList.jsx'
 import PostDetail from './components/PostDetail.jsx'
@@ -49,6 +50,7 @@ export default function App() {
   return (
     <div className="page">
       <TopNav activeBoard={activeBoard} onSelectBoard={selectBoard} onHome={() => selectBoard('all')} />
+      <HeroCarousel />
       <Banner />
 
       <main className="page__main">
