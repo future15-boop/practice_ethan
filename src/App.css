@@ -13,6 +13,38 @@
   margin: 0 auto;
 }
 
-@media (max-width: 479px) {
+.page__missing {
+  background: var(--canvas);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-md);
+  padding: var(--sp-3xl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sp-lg);
+  color: var(--body);
+}
+
+/* ── shared buttons ───────────────────────────────── */
+.btn {
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25.6px;
+  letter-spacing: -0.16px;
+  border-radius: var(--r-sm);
+  padding: var(--sp-md) var(--sp-xl);
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: opacity 0.15s ease;
+}
+.btn:hover { opacity: 0.88; }
+
+.btn--primary { background: var(--ink); color: var(--on-primary); border-color: var(--ink); }
+.btn--secondary { background: var(--canvas); color: var(--ink); border-color: var(--hairline); }
+.btn--danger { background: var(--canvas); color: var(--accent-red, #ee1d36); border-color: var(--hairline); }
+.btn--sm { font-size: 14px; padding: var(--sp-sm) var(--sp-lg); }
+
+@media (max-width: 767px) {
   .page__main { padding: var(--sp-lg); }
 }

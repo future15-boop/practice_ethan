@@ -1,0 +1,29 @@
+.pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--sp-xs);
+  margin-top: var(--sp-2xl);
+}
+
+.pager__btn {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 var(--sp-md);
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--body);
+  background: var(--canvas);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-sm);
+  cursor: pointer;
+}
+.pager__btn:hover:not(:disabled) { border-color: var(--ink); color: var(--ink); }
+.pager__btn:disabled { color: var(--mute-soft); cursor: not-allowed; }
+
+.pager__num.is-active {
+  background: var(--ink);
+  color: var(--on-primary);
+  border-color: var(--ink);
+}
