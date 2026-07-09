@@ -1,0 +1,67 @@
+/* ─────────────────────────────────────────────────────────────
+   Webflow-inspired design standard (from DESIGN-webflow.md)
+   ───────────────────────────────────────────────────────────── */
+:root {
+  /* Surface */
+  --canvas: #ffffff;
+  --hairline: #d8d8d8;
+
+  /* Ink / text ramp */
+  --ink: #080808;
+  --ink-strong: #222222;
+  --body: #363636;
+  --body-mid: #5a5a5a;
+  --mute: #898989;
+  --mute-soft: #ababab;
+  --on-primary: #ffffff;
+
+  /* 5-stop chromatic accents (surface fills only, never buttons) */
+  --accent-purple: #7a3dff;
+  --accent-pink: #ed52cb;
+  --accent-blue: #3b89ff;
+  --accent-orange: #ff6b00;
+  --accent-green: #00d722;
+  --accent-blue-info: #146ef5;
+
+  /* Radius */
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-full: 9999px;
+
+  /* Spacing (base 4px) */
+  --sp-xs: 4px;
+  --sp-sm: 8px;
+  --sp-md: 12px;
+  --sp-lg: 16px;
+  --sp-xl: 20px;
+  --sp-2xl: 24px;
+  --sp-3xl: 32px;
+
+  /* Type */
+  --font: "WF Visual Sans Variable", Inter, system-ui, -apple-system, sans-serif;
+  --font-mono: "WFVisualSans-Mono", Inconsolata, ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Elevation — brand's signature layered drop-shadow */
+  --shadow-l2: 0 84px 24px rgba(0,0,0,0), 0 54px 22px rgba(0,0,0,0.01),
+    0 30px 18px rgba(0,0,0,0.04), 0 13px 13px rgba(0,0,0,0.08), 0 3px 7px rgba(0,0,0,0.09);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  font-family: var(--font);
+  background: var(--canvas);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Uppercase eyebrow — marks every section (15/500, +1.5px) */
+.eyebrow {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--mute);
+}

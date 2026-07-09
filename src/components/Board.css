@@ -1,0 +1,93 @@
+.board {
+  background: var(--canvas);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-md);
+  padding: var(--sp-3xl);
+  box-shadow: var(--shadow-l2);
+}
+
+.board__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: var(--sp-2xl);
+}
+
+.board__title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 41.6px;
+  color: var(--ink);
+}
+
+/* button-primary — near-black CTA, tight 4px radius */
+.board__write {
+  background: var(--ink);
+  color: var(--on-primary);
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25.6px;
+  letter-spacing: -0.16px;
+  border: none;
+  border-radius: var(--r-sm);
+  padding: var(--sp-md) var(--sp-xl);
+  cursor: pointer;
+}
+.board__write:hover { opacity: 0.88; }
+
+.board__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* header — uppercase caption style, hairline underline */
+.board__th {
+  text-align: left;
+  font-size: 12.8px;
+  font-weight: 550;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--mute);
+  padding: var(--sp-md) var(--sp-lg);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.board__td {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: var(--body);
+  padding: var(--sp-md) var(--sp-lg);
+  border-bottom: 1px solid var(--hairline);
+  vertical-align: middle;
+}
+
+.board__row:hover { background: #fafafa; }
+
+.board__th--no,    .board__td--no    { width: 56px; }
+.board__th--author,.board__td--author{ width: 96px; }
+.board__th--date,  .board__td--date  { width: 120px; color: var(--mute); }
+.board__th--views, .board__td--views { width: 72px; text-align: right; color: var(--mute); }
+
+.board__td--no { color: var(--mute); }
+
+.board__badge {
+  display: inline-block;
+  font-size: 12.8px;
+  font-weight: 550;
+  margin-right: var(--sp-sm);
+}
+
+.board__link {
+  color: var(--ink);
+  font-weight: 500;
+  cursor: pointer;
+}
+.board__link:hover { text-decoration: underline; }
+
+@media (max-width: 767px) {
+  .board { padding: var(--sp-xl); }
+  .board__th--author, .board__td--author,
+  .board__th--views,  .board__td--views { display: none; }
+}

@@ -1,0 +1,39 @@
+/* hero-band-dark : polarity-flipped near-black hero */
+.banner {
+  background: var(--ink);
+  color: var(--on-primary);
+  padding: 72px var(--sp-3xl);
+}
+
+.banner__inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.banner__eyebrow {
+  color: var(--mute-soft);
+  margin-bottom: var(--sp-lg);
+}
+
+.banner__title {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 83.2px;
+  letter-spacing: -0.8px;
+}
+
+.banner__lead {
+  margin-top: var(--sp-2xl);
+  max-width: 620px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.16px;
+  color: var(--mute-soft);
+}
+
+@media (max-width: 767px) {
+  .banner { padding: 48px var(--sp-lg); }
+  .banner__title { font-size: 44.8px; line-height: 46.6px; letter-spacing: -0.4px; }
+  .banner__lead { font-size: 16px; line-height: 25.6px; }
+}

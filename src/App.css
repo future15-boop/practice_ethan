@@ -1,0 +1,18 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--canvas);
+}
+
+.page__main {
+  flex: 1;
+  padding: var(--sp-3xl);
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 479px) {
+  .page__main { padding: var(--sp-lg); }
+}
